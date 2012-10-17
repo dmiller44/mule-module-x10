@@ -35,11 +35,11 @@ public class X10ModuleTest extends FunctionalTestCase
         return "mule-config.xml";
     }
 
-    @Test
-    public void testFlow() throws Exception
-    {
-        runFlowAndExpect("testFlow", "Another string");
-    }
+//    @Test
+//    public void testFlow() throws Exception
+//    {
+//        runFlowAndExpect("testFlow", "Another string");
+//    }
 
     /**
     * Run the flow specified by name and assert equality on the expected output
