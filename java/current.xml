@@ -1,0 +1,2604 @@
+<api>
+<package name="com.angrygiant.mule.x10"
+>
+<class name="X10Address"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="X10Address"
+ type="com.angrygiant.mule.x10.X10Address"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<constructor name="X10Address"
+ type="com.angrygiant.mule.x10.X10Address"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="houseCode" type="java.lang.String">
+</parameter>
+<parameter name="unitCode" type="int">
+</parameter>
+</constructor>
+<method name="getHouseCode"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getUnitCode"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isValid"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setHouseCode"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="houseCode" type="java.lang.String">
+</parameter>
+</method>
+<method name="setUnitCode"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="unitCode" type="int">
+</parameter>
+</method>
+<field name="houseCode"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="unitCode"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+</class>
+<class name="X10Command"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="X10Command"
+ type="com.angrygiant.mule.x10.X10Command"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="address" type="com.angrygiant.mule.x10.X10Address">
+</parameter>
+<parameter name="command" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor name="X10Command"
+ type="com.angrygiant.mule.x10.X10Command"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="address" type="com.angrygiant.mule.x10.X10Address">
+</parameter>
+<parameter name="command" type="java.lang.String">
+</parameter>
+<parameter name="extendedCommand" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor name="X10Command"
+ type="com.angrygiant.mule.x10.X10Command"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="address" type="com.angrygiant.mule.x10.X10Address">
+</parameter>
+<parameter name="command" type="java.lang.String">
+</parameter>
+<parameter name="extendedCommand" type="java.lang.String">
+</parameter>
+<parameter name="retries" type="int">
+</parameter>
+</constructor>
+<method name="getAddress"
+ return="com.angrygiant.mule.x10.X10Address"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getCommand"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getExtendedCommand"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getRetries"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setAddress"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="address" type="com.angrygiant.mule.x10.X10Address">
+</parameter>
+</method>
+<method name="setCommand"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="command" type="java.lang.String">
+</parameter>
+</method>
+<method name="setExtendedCommand"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="extendedCommand" type="java.lang.String">
+</parameter>
+</method>
+<method name="setRetries"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="retries" type="int">
+</parameter>
+</method>
+<field name="address"
+ type="com.angrygiant.mule.x10.X10Address"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="command"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="extendedCommand"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="retries"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+</class>
+<class name="X10Module"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="X10Module"
+ type="com.angrygiant.mule.x10.X10Module"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="execute"
+ return="com.angrygiant.mule.x10.X10Command"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="command" type="java.lang.String">
+</parameter>
+<parameter name="retries" type="int">
+</parameter>
+<parameter name="houseCode" type="java.lang.String">
+</parameter>
+<parameter name="unitCode" type="java.lang.Integer">
+</parameter>
+<parameter name="extendedCommand" type="java.lang.String">
+</parameter>
+<parameter name="messagePayload" type="java.lang.Object">
+</parameter>
+<exception name="ExecutorException" type="com.angrygiant.mule.x10.exception.ExecutorException">
+</exception>
+</method>
+<method name="getExecutor"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="initializeModule"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="ExecutorNotFoundException" type="com.angrygiant.mule.x10.exception.ExecutorNotFoundException">
+</exception>
+</method>
+<method name="lookup"
+ return="com.angrygiant.mule.x10.X10Address"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="store" type="java.lang.String">
+</parameter>
+<parameter name="location" type="java.lang.String">
+</parameter>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<exception name="LookupServiceException" type="com.angrygiant.mule.x10.exception.LookupServiceException">
+</exception>
+</method>
+<method name="setExecutor"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="executor" type="java.lang.String">
+</parameter>
+</method>
+<field name="configuredExecutor"
+ type="com.angrygiant.mule.x10.executor.X10Executor"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="executor"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="logger"
+ type="org.apache.log4j.Logger"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+</class>
+<interface name="X10ModuleConstants"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<field name="COMMAND_BRIGHT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;bright&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="COMMAND_DIM"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;dim&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="COMMAND_OFF"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;off&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="COMMAND_ON"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;on&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXECUTOR_HEYU"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;heyu-cm17a&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXECUTOR_STDOUT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;stdout&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HOUSECODE_A"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;A&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HOUSECODE_B"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;B&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HOUSECODE_C"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;C&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HOUSECODE_D"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;D&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HOUSECODE_E"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;E&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HOUSECODE_F"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;F&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HOUSECODE_G"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;G&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HOUSECODE_H"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;H&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HOUSECODE_I"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;I&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HOUSECODE_J"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;J&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HOUSECODE_K"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;K&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HOUSECODE_L"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;L&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HOUSECODE_M"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;M&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HOUSECODE_N"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;N&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HOUSECODE_O"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;O&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HOUSECODE_P"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;P&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="LOOKUP_STORE_PROPERTIES"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;properties&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="LOOKUP_STORE_REDIS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;redis&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNITCODE_1"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="1"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNITCODE_10"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="10"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNITCODE_11"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="11"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNITCODE_12"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="12"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNITCODE_13"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="13"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNITCODE_14"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="14"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNITCODE_15"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="15"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNITCODE_16"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNITCODE_2"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNITCODE_3"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="3"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNITCODE_4"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="4"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNITCODE_5"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="5"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNITCODE_6"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="6"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNITCODE_7"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="7"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNITCODE_8"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="8"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNITCODE_9"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="9"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</interface>
+</package>
+<package name="com.angrygiant.mule.x10.config"
+>
+<class name="ExecuteMessageProcessor"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.mule.api.lifecycle.Initialisable">
+</implements>
+<implements name="org.mule.api.processor.MessageProcessor">
+</implements>
+<constructor name="ExecuteMessageProcessor"
+ type="com.angrygiant.mule.x10.config.ExecuteMessageProcessor"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="dispose"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="initialise"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="InitialisationException" type="org.mule.api.lifecycle.InitialisationException">
+</exception>
+</method>
+<method name="process"
+ return="org.mule.api.MuleEvent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="event" type="org.mule.api.MuleEvent">
+</parameter>
+<exception name="MuleException" type="org.mule.api.MuleException">
+</exception>
+</method>
+<method name="setCommand"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<method name="setExtendedCommand"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<method name="setFlowConstruct"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="flowConstruct" type="org.mule.api.construct.FlowConstruct">
+</parameter>
+</method>
+<method name="setHouseCode"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<method name="setMessagePayload"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<method name="setModuleObject"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="moduleObject" type="java.lang.Object">
+</parameter>
+</method>
+<method name="setMuleContext"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="org.mule.api.MuleContext">
+</parameter>
+</method>
+<method name="setRetries"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<method name="setRetryMax"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="int">
+</parameter>
+</method>
+<method name="setUnitCode"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<method name="start"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="MuleException" type="org.mule.api.MuleException">
+</exception>
+</method>
+<method name="stop"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="MuleException" type="org.mule.api.MuleException">
+</exception>
+</method>
+<field name="_commandType"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="_extendedCommandType"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="_houseCodeType"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="_messagePayloadType"
+ type="java.lang.Object"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="_retriesType"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="_unitCodeType"
+ type="java.lang.Integer"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="command"
+ type="java.lang.Object"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="expressionManager"
+ type="org.mule.api.expression.ExpressionManager"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="extendedCommand"
+ type="java.lang.Object"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="flowConstruct"
+ type="org.mule.api.construct.FlowConstruct"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="houseCode"
+ type="java.lang.Object"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="logger"
+ type="org.slf4j.Logger"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="messagePayload"
+ type="java.lang.Object"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="moduleObject"
+ type="java.lang.Object"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="muleContext"
+ type="org.mule.api.MuleContext"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="patternInfo"
+ type="org.mule.util.TemplateParser.PatternInfo"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="retries"
+ type="java.lang.Object"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="retryCount"
+ type="java.util.concurrent.atomic.AtomicInteger"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="retryMax"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="unitCode"
+ type="java.lang.Object"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+</class>
+<class name="LookupMessageProcessor"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.mule.api.lifecycle.Initialisable">
+</implements>
+<implements name="org.mule.api.processor.MessageProcessor">
+</implements>
+<constructor name="LookupMessageProcessor"
+ type="com.angrygiant.mule.x10.config.LookupMessageProcessor"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="dispose"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="initialise"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="InitialisationException" type="org.mule.api.lifecycle.InitialisationException">
+</exception>
+</method>
+<method name="process"
+ return="org.mule.api.MuleEvent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="event" type="org.mule.api.MuleEvent">
+</parameter>
+<exception name="MuleException" type="org.mule.api.MuleException">
+</exception>
+</method>
+<method name="setFlowConstruct"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="flowConstruct" type="org.mule.api.construct.FlowConstruct">
+</parameter>
+</method>
+<method name="setKey"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<method name="setLocation"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<method name="setModuleObject"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="moduleObject" type="java.lang.Object">
+</parameter>
+</method>
+<method name="setMuleContext"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="org.mule.api.MuleContext">
+</parameter>
+</method>
+<method name="setRetryMax"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="int">
+</parameter>
+</method>
+<method name="setStore"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<method name="start"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="MuleException" type="org.mule.api.MuleException">
+</exception>
+</method>
+<method name="stop"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="MuleException" type="org.mule.api.MuleException">
+</exception>
+</method>
+<field name="_keyType"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="_locationType"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="_storeType"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="expressionManager"
+ type="org.mule.api.expression.ExpressionManager"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="flowConstruct"
+ type="org.mule.api.construct.FlowConstruct"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="key"
+ type="java.lang.Object"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="location"
+ type="java.lang.Object"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="logger"
+ type="org.slf4j.Logger"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="moduleObject"
+ type="java.lang.Object"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="muleContext"
+ type="org.mule.api.MuleContext"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="patternInfo"
+ type="org.mule.util.TemplateParser.PatternInfo"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="retryCount"
+ type="java.util.concurrent.atomic.AtomicInteger"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="retryMax"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="store"
+ type="java.lang.Object"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+</class>
+<class name="X10ModuleCapabilitiesAdapter"
+ extends="com.angrygiant.mule.x10.X10Module"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="X10ModuleCapabilitiesAdapter"
+ type="com.angrygiant.mule.x10.config.X10ModuleCapabilitiesAdapter"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="isCapableOf"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="capability" type="org.mule.api.Capability">
+</parameter>
+</method>
+</class>
+<class name="X10ModuleLifecycleAdapter"
+ extends="com.angrygiant.mule.x10.config.X10ModuleCapabilitiesAdapter"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.mule.api.lifecycle.Initialisable">
+</implements>
+<constructor name="X10ModuleLifecycleAdapter"
+ type="com.angrygiant.mule.x10.config.X10ModuleLifecycleAdapter"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="dispose"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="initialise"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="InitialisationException" type="org.mule.api.lifecycle.InitialisationException">
+</exception>
+</method>
+<method name="start"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="MuleException" type="org.mule.api.MuleException">
+</exception>
+</method>
+<method name="stop"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="MuleException" type="org.mule.api.MuleException">
+</exception>
+</method>
+</class>
+</package>
+<package name="com.angrygiant.mule.x10.config.spring"
+>
+<class name="ExecuteDefinitionParser"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.springframework.beans.factory.xml.BeanDefinitionParser">
+</implements>
+<constructor name="ExecuteDefinitionParser"
+ type="com.angrygiant.mule.x10.config.spring.ExecuteDefinitionParser"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getAttributeValue"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="element" type="org.w3c.dom.Element">
+</parameter>
+<parameter name="attributeName" type="java.lang.String">
+</parameter>
+</method>
+<method name="parse"
+ return="org.springframework.beans.factory.config.BeanDefinition"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="element" type="org.w3c.dom.Element">
+</parameter>
+<parameter name="parserContent" type="org.springframework.beans.factory.xml.ParserContext">
+</parameter>
+</method>
+<field name="patternInfo"
+ type="org.mule.util.TemplateParser.PatternInfo"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+</class>
+<class name="LookupDefinitionParser"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.springframework.beans.factory.xml.BeanDefinitionParser">
+</implements>
+<constructor name="LookupDefinitionParser"
+ type="com.angrygiant.mule.x10.config.spring.LookupDefinitionParser"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getAttributeValue"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="element" type="org.w3c.dom.Element">
+</parameter>
+<parameter name="attributeName" type="java.lang.String">
+</parameter>
+</method>
+<method name="parse"
+ return="org.springframework.beans.factory.config.BeanDefinition"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="element" type="org.w3c.dom.Element">
+</parameter>
+<parameter name="parserContent" type="org.springframework.beans.factory.xml.ParserContext">
+</parameter>
+</method>
+<field name="patternInfo"
+ type="org.mule.util.TemplateParser.PatternInfo"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+</class>
+<class name="X10ModuleConfigDefinitionParser"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.springframework.beans.factory.xml.BeanDefinitionParser">
+</implements>
+<constructor name="X10ModuleConfigDefinitionParser"
+ type="com.angrygiant.mule.x10.config.spring.X10ModuleConfigDefinitionParser"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="parse"
+ return="org.springframework.beans.factory.config.BeanDefinition"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="element" type="org.w3c.dom.Element">
+</parameter>
+<parameter name="parserContent" type="org.springframework.beans.factory.xml.ParserContext">
+</parameter>
+</method>
+<field name="patternInfo"
+ type="org.mule.util.TemplateParser.PatternInfo"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+</class>
+<class name="X10ModuleNamespaceHandler"
+ extends="org.springframework.beans.factory.xml.NamespaceHandlerSupport"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="X10ModuleNamespaceHandler"
+ type="com.angrygiant.mule.x10.config.spring.X10ModuleNamespaceHandler"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="init"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+</package>
+<package name="com.angrygiant.mule.x10.exception"
+>
+<class name="ExecutorException"
+ extends="java.lang.Exception"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ExecutorException"
+ type="com.angrygiant.mule.x10.exception.ExecutorException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="address" type="com.angrygiant.mule.x10.X10Address">
+</parameter>
+<parameter name="command" type="java.lang.String">
+</parameter>
+<parameter name="extendedCommand" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor name="ExecutorException"
+ type="com.angrygiant.mule.x10.exception.ExecutorException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="address" type="com.angrygiant.mule.x10.X10Address">
+</parameter>
+<parameter name="command" type="java.lang.String">
+</parameter>
+<parameter name="extendedCommand" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="nested" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<method name="getAddress"
+ return="com.angrygiant.mule.x10.X10Address"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getCommand"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getExtendedCommand"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="address"
+ type="com.angrygiant.mule.x10.X10Address"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="command"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="extendedCommand"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+</class>
+<class name="ExecutorNotFoundException"
+ extends="java.lang.Exception"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ExecutorNotFoundException"
+ type="com.angrygiant.mule.x10.exception.ExecutorNotFoundException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class name="HeyuCM17AException"
+ extends="com.angrygiant.mule.x10.exception.ExecutorException"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="HeyuCM17AException"
+ type="com.angrygiant.mule.x10.exception.HeyuCM17AException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="address" type="com.angrygiant.mule.x10.X10Address">
+</parameter>
+<parameter name="command" type="java.lang.String">
+</parameter>
+<parameter name="extendedCommand" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor name="HeyuCM17AException"
+ type="com.angrygiant.mule.x10.exception.HeyuCM17AException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="address" type="com.angrygiant.mule.x10.X10Address">
+</parameter>
+<parameter name="command" type="java.lang.String">
+</parameter>
+<parameter name="extendedCommand" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="nested" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class name="InvalidX10AddressException"
+ extends="java.lang.Exception"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="InvalidX10AddressException"
+ type="com.angrygiant.mule.x10.exception.InvalidX10AddressException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="address" type="com.angrygiant.mule.x10.X10Address">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="getAddress"
+ return="com.angrygiant.mule.x10.X10Address"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="address"
+ type="com.angrygiant.mule.x10.X10Address"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+</class>
+<class name="InvalidX10CommandException"
+ extends="java.lang.Exception"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="InvalidX10CommandException"
+ type="com.angrygiant.mule.x10.exception.InvalidX10CommandException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="command" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="getCommand"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="command"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+</class>
+<class name="LookupServiceException"
+ extends="java.lang.Exception"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="LookupServiceException"
+ type="com.angrygiant.mule.x10.exception.LookupServiceException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor name="LookupServiceException"
+ type="com.angrygiant.mule.x10.exception.LookupServiceException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="throwable" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class name="LookupServiceNotFoundException"
+ extends="java.lang.Exception"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="LookupServiceNotFoundException"
+ type="com.angrygiant.mule.x10.exception.LookupServiceNotFoundException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+</package>
+<package name="com.angrygiant.mule.x10.executor"
+>
+<class name="ExecutorFactory"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ExecutorFactory"
+ type="com.angrygiant.mule.x10.executor.ExecutorFactory"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="findExecutor"
+ return="com.angrygiant.mule.x10.executor.X10Executor"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="type" type="java.lang.String">
+</parameter>
+<exception name="ExecutorNotFoundException" type="com.angrygiant.mule.x10.exception.ExecutorNotFoundException">
+</exception>
+</method>
+</class>
+<class name="HeyuCM17AExecutor"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="com.angrygiant.mule.x10.executor.X10Executor">
+</implements>
+<method name="execute"
+ return="com.angrygiant.mule.x10.X10Command"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="address" type="com.angrygiant.mule.x10.X10Address">
+</parameter>
+<parameter name="command" type="java.lang.String">
+</parameter>
+<parameter name="extendedCommand" type="java.lang.String">
+</parameter>
+<parameter name="repeats" type="int">
+</parameter>
+<exception name="ExecutorException" type="com.angrygiant.mule.x10.exception.ExecutorException">
+</exception>
+</method>
+<method name="getInstance"
+ return="com.angrygiant.mule.x10.executor.HeyuCM17AExecutor"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="DEFAULT_HEYU_CLI"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;heyu&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="FIRECRACKER_BRIGHT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;fbright&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="FIRECRACKER_DIM"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;fdim&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="FIRECRACKER_OFF"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;foff&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="FIRECRACKER_ON"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;fon&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="logger"
+ type="org.apache.log4j.Logger"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="ourInstance"
+ type="com.angrygiant.mule.x10.executor.HeyuCM17AExecutor"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+</class>
+<class name="StdOutX10Executor"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="com.angrygiant.mule.x10.executor.X10Executor">
+</implements>
+<method name="execute"
+ return="com.angrygiant.mule.x10.X10Command"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="address" type="com.angrygiant.mule.x10.X10Address">
+</parameter>
+<parameter name="command" type="java.lang.String">
+</parameter>
+<parameter name="extendedCommand" type="java.lang.String">
+</parameter>
+<parameter name="repeats" type="int">
+</parameter>
+<exception name="ExecutorException" type="com.angrygiant.mule.x10.exception.ExecutorException">
+</exception>
+</method>
+<method name="getInstance"
+ return="com.angrygiant.mule.x10.executor.StdOutX10Executor"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="delimiter"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;;&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="logger"
+ type="org.apache.log4j.Logger"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="ourInstance"
+ type="com.angrygiant.mule.x10.executor.StdOutX10Executor"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+</class>
+<interface name="X10Executor"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="execute"
+ return="com.angrygiant.mule.x10.X10Command"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="address" type="com.angrygiant.mule.x10.X10Address">
+</parameter>
+<parameter name="command" type="java.lang.String">
+</parameter>
+<parameter name="extendedCommand" type="java.lang.String">
+</parameter>
+<parameter name="repeats" type="int">
+</parameter>
+<exception name="ExecutorException" type="com.angrygiant.mule.x10.exception.ExecutorException">
+</exception>
+</method>
+</interface>
+</package>
+<package name="com.angrygiant.mule.x10.lookup"
+>
+<interface name="LookupService"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="lookupDevice"
+ return="com.angrygiant.mule.x10.X10Address"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="location" type="java.lang.String">
+</parameter>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<exception name="LookupServiceException" type="com.angrygiant.mule.x10.exception.LookupServiceException">
+</exception>
+</method>
+</interface>
+<class name="LookupServiceFactory"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="LookupServiceFactory"
+ type="com.angrygiant.mule.x10.lookup.LookupServiceFactory"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="findLookupService"
+ return="com.angrygiant.mule.x10.lookup.LookupService"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="store" type="java.lang.String">
+</parameter>
+<exception name="LookupServiceNotFoundException" type="com.angrygiant.mule.x10.exception.LookupServiceNotFoundException">
+</exception>
+</method>
+</class>
+<class name="PropertiesLookupService"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="com.angrygiant.mule.x10.lookup.LookupService">
+</implements>
+<method name="getInstance"
+ return="com.angrygiant.mule.x10.lookup.PropertiesLookupService"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="lookupDevice"
+ return="com.angrygiant.mule.x10.X10Address"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="location" type="java.lang.String">
+</parameter>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<exception name="LookupServiceException" type="com.angrygiant.mule.x10.exception.LookupServiceException">
+</exception>
+</method>
+<field name="logger"
+ type="org.apache.log4j.Logger"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="ourInstance"
+ type="com.angrygiant.mule.x10.lookup.PropertiesLookupService"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="properties"
+ type="java.util.Properties"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+<field name="propertiesFile"
+ type="java.io.File"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="private"
+>
+</field>
+</class>
+</package>
+</api>
