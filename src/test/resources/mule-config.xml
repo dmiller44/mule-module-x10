@@ -57,4 +57,20 @@
         <x10:execute command="on" />
     </flow>
 
+    <flow name="testPropertiesLookupService">
+        <x10:lookup store="properties" location="./src/test/resources/x10-devices.properties" key="front-light" />
+    </flow>
+
+    <flow name="testPropertiesLookupServiceNoDevice">
+        <x10:lookup store="properties" location="./src/test/resources/x10-devices.properties" key="foo" />
+    </flow>
+
+    <flow name="testPropertiesLookupServiceNoFile">
+        <x10:lookup store="properties" location="./nofile.properties" key="foo" />
+    </flow>
+
+    <flow name="testBadStore">
+        <x10:lookup store="foo" location="./nofile.properties" key="foo" />
+    </flow>
+
 </mule>

@@ -66,6 +66,30 @@ public class X10ModuleTest extends FunctionalTestCase
         runFlowAndExpect("testBadAddressCall", NullPayload.getInstance());
     }
 
+    @Test
+    public void testPropertiesLookupService() throws Exception
+    {
+        runFlowAndExpect("testPropertiesLookupService", new X10Address(X10ModuleConstants.HOUSECODE_A, X10ModuleConstants.UNITCODE_1));
+    }
+
+    @Test
+    public void testPropertiesLookupServiceNoDevice() throws Exception
+    {
+        runFlowAndExpect("testPropertiesLookupServiceNoDevice", NullPayload.getInstance());
+    }
+
+    @Test
+    public void testPropertiesLookupServiceNoFile() throws Exception
+    {
+        runFlowAndExpect("testPropertiesLookupServiceNoFile", NullPayload.getInstance());
+    }
+
+    @Test
+    public void testBadStore() throws Exception
+    {
+        runFlowAndExpect("testBadStore", NullPayload.getInstance());
+    }
+
     /**
     * Run the flow specified by name and assert equality on the expected output
     *
