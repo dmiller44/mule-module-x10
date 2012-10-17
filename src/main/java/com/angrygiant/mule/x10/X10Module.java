@@ -22,8 +22,12 @@ package com.angrygiant.mule.x10;
 
 import com.angrygiant.mule.x10.exception.ExecutorException;
 import com.angrygiant.mule.x10.exception.ExecutorNotFoundException;
+import com.angrygiant.mule.x10.exception.LookupServiceException;
+import com.angrygiant.mule.x10.exception.LookupServiceNotFoundException;
 import com.angrygiant.mule.x10.executor.ExecutorFactory;
 import com.angrygiant.mule.x10.executor.X10Executor;
+import com.angrygiant.mule.x10.lookup.LookupService;
+import com.angrygiant.mule.x10.lookup.LookupServiceFactory;
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import org.mule.api.annotations.Module;
@@ -58,6 +62,7 @@ public class X10Module
     public void initializeModule() throws ExecutorNotFoundException {
         this.configuredExecutor = ExecutorFactory.findExecutor(executor);
     }
+
     /**
      * Execute processor
      *
@@ -100,6 +105,38 @@ public class X10Module
 
         logger.info("Turn over control to the executor class");
         return this.configuredExecutor.execute(address, command, extendedCommand, retries);
+    }
+
+    /**
+     * Execute X10Address lookup
+     *
+     * <p>Capable of looking up X10 addresses using a given store kind.  Multiple variations exist.</p>
+     *
+     * {@sample.xml ../../../doc/X10-connector.xml.sample x10:lookup}
+     *
+     * @param store   The kind of store you want to lookup the address from
+     * @param location   The location string for the store kind (represents something specific to store kind)
+     * @param key       The key to lookup
+     *
+     * @throws LookupServiceException  Generic exception that occurs when store misbehaves
+     *
+     * @return instance of X10Address
+     */
+    @Processor
+    public X10Address lookup(@Optional @Default("properties") String store,@Optional @Default("/etc/x10/lookup.properties") String location, String key) throws LookupServiceException {
+        X10Address address = null;
+
+        LookupService service = null;
+        try {
+            service = LookupServiceFactory.findLookupService(store);
+        } catch (LookupServiceNotFoundException e) {
+            logger.error("Error using factory to retrieve lookup service");
+            throw new LookupServiceException("Could not locate service with key " + store, e);
+        }
+
+        address = service.lookupDevice(location, key);
+
+        return address;
     }
 
     /*

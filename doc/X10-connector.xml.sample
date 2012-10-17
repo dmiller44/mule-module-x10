@@ -1,3 +1,6 @@
 <!-- BEGIN_INCLUDE(x10:execute) -->
     <x10:execute houseCode="A" unitCode="1" command="on" retries="2" />
 <!-- END_INCLUDE(x10:execute) -->
+<!-- BEGIN_INCLUDE(x10:lookup) -->
+    <x10:lookup store="properties" location="/etc/x10/devices.properties" key="front-light" />
+<!-- END_INCLUDE(x10:lookup) -->
