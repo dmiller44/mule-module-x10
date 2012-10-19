@@ -83,10 +83,15 @@ public class HeyuCM17AExecutor implements X10Executor {
 
         if (x10Command.getExtendedCommand() != null) {
             logger.info("Setting process with extended command..");
+            logger.info("Address: " + x10Command.getAddress().toString());
+            logger.info("Command: " + x10Command.getCommand());
+            logger.info("Extended: " + x10Command.getExtendedCommand());
             processBuilder = new ProcessBuilder(DEFAULT_HEYU_CLI, x10Command.getCommand(), x10Command.getAddress().toString(), x10Command.getExtendedCommand());
             processBuilder.redirectErrorStream(true);
         } else {
             logger.info("Setting process with simple command...");
+            logger.info("Address: " + x10Command.getAddress().toString());
+            logger.info("Command: " + x10Command.getCommand());
             processBuilder = new ProcessBuilder(DEFAULT_HEYU_CLI, x10Command.getCommand(), x10Command.getAddress().toString());
             processBuilder.redirectErrorStream(true);
         }
